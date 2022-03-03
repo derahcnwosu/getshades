@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow: auto; */
+}
+
+.container{
+    max-width: 1100px;
+    margin: auto;
+}
+.small-txt{
+    font-size: 1.6rem;
+}
+
+
+/* NAVBAR */
+.navbar{
+    background: #03b1fc;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.logo{
+    margin: 0.5rem;
+    font-family: cursive;
+}
+.getLink {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-links{
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem;
+    transition: all 1s ease-in-out;
+}
+.nav-link:hover{
+    background: #fff;
+    color: #03b1fc;
+
+}
+
+/* HEADER */
+.header{
+    background: url('../img/pexels-вальдемар-9876022.jpg') no-repeat center center/cover;
+    height: 70vh;
+    color: #fff;
+}
+.shades{
+    background: rgba(0, 0, 0, 0.8);
+    height: 100%;
+    transition: all 1s ease-in-out;
+}
+.shades h1{
+    font-size: 4rem;
+}
+.shades .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 8rem;
+    padding: 0 15rem;
+}
+
+.btn{
+    display: inline-block;
+    height: 1.96rem;
+    padding: 0 1rem;
+    cursor: pointer;
+    background: #03b1fc;
+    color: #fff;
+    border: none;
+    margin-top: 1rem;
+    position: absolute;
+    right: 0rem;
+    transition: all 1s ease-in-out;
+}
+.btn:hover{
+    background: #0485bd;
+}
+
+.search-tab{
+    position: relative;
+}
+
+#search{
+    width: 20rem;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    border: none;
+    outline: #03b1fc;
+    transition: all 1s ease-in-out;
+}
+#search:focus {
+    border: 0.1px solid #03b1fc;
+}
+
+
+.current{
+    background: #fff;
+    color: #03b1fc;
+}
+
+
+/* SECTION TITLE */
+.section-title{
+    background: rgb(248, 245, 245);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    color: #333;
+}
+
+
+.shop{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.item{
+    height: 250px;
+    width: 300px;
+    margin: 1rem;
+    transition: all 1s ease-in-out;
+}
+.item .shades{
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    transition: all 1s ease-in-out;
+}
+.item .shades:hover{
+    background: rgba(0, 0, 0, 0.8);
+}
+/* .item:hover{
+    height: 300px;
+} */
+
+
+
+/* ITEMS */
+.item-1{
+    background: url('../img/pexels-antony-trivet-9982062.jpg') no-repeat center center/cover;
+}
+.item-2{
+    background: url('../img/pexels-keletso-mphuthi-10125997.jpg') no-repeat center center/cover;
+}
+.item-3{
+    background: url('../img/pexels-thegiansepillo-5270252.jpg') no-repeat center center/cover;
+}
+.item-4{
+    background: url('../img/pexels-breston-kenya-7431243.jpg') no-repeat center center/cover;
+}
