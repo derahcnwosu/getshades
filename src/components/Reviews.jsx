@@ -1,14 +1,12 @@
 import React from 'react'
+import Card from './Card'
 
 function Reviews() {
   return (
-    <div className="reviews">
-        <ul>
-            <li>
-                <div className="review-txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, nemo.</div>
-                <div className="review-image image-1"></div>
-            </li>
-        </ul>
+    <div className="container">
+      <Card height= '400px'>
+        
+      </Card>
     </div>
   )
 }

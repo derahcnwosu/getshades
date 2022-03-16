@@ -165,3 +165,58 @@
 .item-4{
     background: url('../img/pexels-breston-kenya-7431243.jpg') no-repeat center center/cover;
 }
+
+/* CARD COMPONENT */
+
+.card{
+    background: #03b1fc;
+    padding: 2rem;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+    width: 60%;
+    position: relative;
+}
+
+.item-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feedback-list{
+    margin-top: 1rem;
+    padding: 1rem 0;
+}
+
+
+.text{
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+
+.num-display{
+    position: absolute;
+    right: 98%;
+    bottom: 70%;
+    background: rgb(204, 203, 203);
+    color: #444;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.close{
+    position: absolute;
+    left: 94%;
+    bottom: 65%;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
