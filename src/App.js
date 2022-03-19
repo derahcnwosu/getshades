@@ -3,28 +3,24 @@ import Navbar from './components/Navbar';
 import Header from './components/Header';
 import SectionTitle from './components/SectionTitle';
 import ShopWindow from './components/ShopWindow';
-import Reviews from './components/Reviews';
-import FeedbackData from './data/FeedbackData'
-import { useState } from 'react';
 import FeedbackList from './components/FeedbackList';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import Thanks from './components/Thanks';
+import {FeedbackProvider} from './components/context/FeedbackContext'
 
 
 
 
 function App() {
 
-  const[feedback, setFeedback] = useState(FeedbackData)
 
-  const deleteFeedback = (id) => {
-    setFeedback(feedback.filter((item) => (item.id !==id)))
-  }
 
   return (
+    <FeedbackProvider>
         <div className="App">
+          <Router>
           <Navbar />
           <Header />
-          <Router>
             <Routes>
               <Route exact path= "/" element = {
                 <>
@@ -37,15 +33,17 @@ function App() {
               <Route path='/about' element = {
                 <>
                   <SectionTitle text= 'What Our Clients Are Saying'/>
-                  {/* <Reviews /> */}
-                  <FeedbackList feedback={feedback} handleDelete = {deleteFeedback}/>
+                  <FeedbackList />
+                  
                 </>
                
               }>
                 </Route>
+                <Route path='/thanks' element = {<Thanks/>}></Route>
             </Routes>
           </Router>
         </div>
+      </FeedbackProvider>
   );
 }
 

@@ -13,6 +13,10 @@
     font-size: 1.6rem;
 }
 
+.message{
+    color: red;
+    margin-top: 0.6rem;
+}
 
 /* NAVBAR */
 .navbar{
@@ -39,13 +43,13 @@
     display: flex;
 }
 
-.nav-link{
+#nav-link{
     text-decoration: none;
-    color: #fff;
+    /* color: #fff; */
     padding: 1rem;
     transition: all 1s ease-in-out;
 }
-.nav-link:hover{
+#nav-link:hover{
     background: #fff;
     color: #03b1fc;
 
@@ -80,16 +84,25 @@
     height: 1.96rem;
     padding: 0 1rem;
     cursor: pointer;
-    background: #03b1fc;
-    color: #fff;
+    /* background: #03b1fc; */
+    /* color: #fff; */
     border: none;
-    margin-top: 1rem;
+    margin-top: 1.3rem;
     position: absolute;
-    right: 0rem;
+    right: 0.4rem;
     transition: all 1s ease-in-out;
 }
 .btn:hover{
     background: #0485bd;
+    border: none;
+}
+
+.btn-primary{
+    background: #03b1fc;
+    color: #fff;
+}
+.btn:disabled {
+    background: rgb(180, 179, 179);
 }
 
 .search-tab{
@@ -98,7 +111,7 @@
 
 #search{
     width: 20rem;
-    padding: 0.5rem 1rem;
+    padding: 0.8rem 1rem;
     margin-top: 1rem;
     border: none;
     outline: #03b1fc;
@@ -109,10 +122,56 @@
 }
 
 
-.current{
+.active{
     background: #fff;
-    color: #03b1fc;
+    color: #0485bd;
 }
+
+
+/* RATING */
+
+.rating{
+    list-style: none;
+    display: flex;
+}
+.rating li{
+    margin-top: 2rem;
+}
+.num{
+    position: relative;
+}
+.rating li input{
+    position: absolute;
+    left: 1.9rem;
+    opacity: 0;
+}
+.rating li{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 1rem;
+}
+
+label{
+    cursor: pointer;
+    background: #f4f4f4;
+    color: #444;
+    padding: 1rem 1.2rem;
+    border-radius: 50%;
+    /* margin-left: 1rem; */
+    transition: all 1s ease-in-out;
+}
+label:hover{
+    background: #00e1ff;
+}
+
+input[type='radio']:checked ~ label {
+    background: #03b1fc;
+    color: #fff;
+  }
+
+
 
 
 /* SECTION TITLE */

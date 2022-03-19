@@ -1,12 +1,12 @@
 import React from 'react'
-import {BrowserRouter as Router, Link} from 'react-router-dom'
+import {Link, NavLink} from 'react-router-dom'
 import {motion} from 'framer-motion'
 import {FaCartPlus} from 'react-icons/fa'
 
 function Navbar() {
+
   return (
     <nav className="navbar">
-        <Router>
             <motion.h3 className='logo'
                 initial = {{opacity: 0}}
                 animate = {{opacity: 1}}
@@ -17,12 +17,11 @@ function Navbar() {
                 animate = {{x: 0, opacity: 1}}
                 transition = {{type:'spring', stiffness: 30}}
             >
-                <Link className='nav-link current' to= '/home'>Home</Link>
-                <Link className='nav-link' to= '/about'>About</Link>
-                <Link className='nav-link' to= '/contact'>Contact</Link>
-                <Link className='nav-link' to= '/shop'><FaCartPlus /></Link>
+                <NavLink id='nav-link' activeclassname ='active' to= '/'>Home</NavLink>
+                <NavLink id='nav-link' activeclassname ='active' to= '/about'>About</NavLink>
+                <NavLink id='nav-link' activeclassname ='active' to= '/contact'>Contact</NavLink>
+                <NavLink id='nav-link' activeclassname ='active' to= '/shop'><FaCartPlus /></NavLink>
             </motion.ul>
-        </Router>
     </nav>
   )
 }
