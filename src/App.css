@@ -279,3 +279,11 @@ input[type='radio']:checked ~ label {
     background: none;
     border: none;
 }
+.edit{
+    position: absolute;
+    left: 91%;
+    bottom: 65%;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
